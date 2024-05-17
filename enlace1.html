@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav>
+    <form action="controlador" method="post" enctype="multipart/form-data">
+      <div>
+        <label aria-placeholder="ingrese su edad">ingrese su edad</label>
+        <input type="number" autofocus step="1" min="0" max="17" value="5" name="edad" disabled>
+      </div>
+
+      <label for="nombre">nombre</label>
+      <div>
+        <input id="nombre" type="text" name="nombre" required placeholder="ingrese su nombre" title="" autofocus
+          autocomplete="off">
+      </div>
+      <div>
+        <label for="color">selecione un color</label>
+        <input type="color" placeholder="selecione un color" id values="color">
+      </div>
+      <div>
+        <label for="correo">selecione un correo</label>
+        <input type="text" id="correo" required>
+      </div>
+      <div>
+        <label for="numero">ingrese su numero</label>
+        <input type="number" id="numero" required pattern="{0-9}[0.10]">
+      </div>
+      <div>
+        <label for="numero">selecione su ciudad</label>
+        <select name="ciudad" id "ciudad">
+          <option value="1">bucaramaga</option>
+          <option value="2">giron</option>
+          <option value="3">Floridablanca</option>
+          <option value="4">Piedecuesta</option>
+        </select>
+        <input type="number" id="numero" required pattern="{0-9}[0.10]">
+      </div>
+      <div>
+        <label for"sexo">selecione su sexo
+          <input type="radio" name="sexo" checked value="Masculino">M
+          <input type="radio" name="sexo" value="Femenino">F
+        </label>
+      </div>
+      <div>
+        <label for="habilidades">seleciones su habilidad
+          <input type="checkbox" name="Habilidades" checked value="GiT">GIT
+          <input type="checkbox" name="Habilidades" checked value="CLI">CLI
+          <input type="checkbox" name="Habilidades" checked value="HTML">HTML
+          <input type="checkbox" name="Habilidades" checked value="CSS">CSS
+          <input type="checkbox" name="Habilidades" checked value="JAVASCRIPT">JAVASCRIPT
+          <input type="checkbox" name="Habilidades" checked value="PHP">PHP
+        </label>
+      </div>
+      <div>
+        <label for="image">
+          <input accept="image/*" multiple type="file">
+          Elige varias imagenes
+        </label>
+      </div>
+      <div>
+        <button type="submit">guardar</button>
+      </div>
+    </form>
+  </nav>
+</body>
+
+</html>

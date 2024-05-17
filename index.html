@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,16 @@
 </head>
 <body>
   <nav>
+    <img
+      src="https://www.funcionpublica.gov.co/documents/28587425/42384076/logoSena.png/b8131ab9-4c1f-4ef9-8dd4-569d6b7169b6?t=1701956509586"
+      alt="logo" height="111">
+    <ul>
+      <li><a href="enlace1.html">Formulario</a></li>
+      <li><a href="cartaindex.html">Carta</a></li>
+      <li><a href="enlace2.html">Tabla</a></li>
+      <li><a href="enlace3.html">C</a></li>
+      <li><a href="enlace4.html">D</a></li>
+    </ul>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod esse ipsa a voluptate tenetur deleniti, voluptates
       quasi quia magni corporis quae inventore eius eaque expedita, repudiandae fugit alias soluta fugiat.
@@ -25,20 +36,30 @@
     </div>
     <div>
       <label for="color">selecione un color</label>
-      <input type="color" placeholder="selecione un color" id  values="color">
+      <input type="color" placeholder="selecione un color" id values="color">
     </div>
     <button type="submit">guardar</button>
     <div>
       <label for="correo">selecione un correo</label>
       <input type="text" id="correo" required>
-      <button>guardar</button>//// quitar
+      <button>guardar</button>
     </div>
     <div>
       <label for="numero">ingrese su numero</label>
       <input type="number" id="numero" required pattern="{0-9}[0.10]">
-      <button>guardar</button>////quitar
+      <button>guardar</button>
+    </div>
+    <div>
+      <label for="numero">selecione su ciudad</label>
+      <select name="ciudad" id "ciudad" disabled>
+        <option value="1">bucaramaga</option>
+        <option value="2">giron</option>
+        <option value="3">Floridablanca</option>
+        <option value="4">Piedecuesta</option>
+      </select>
+      <input type="number" id="numero" required pattern="{0-9}[0.10]">
+      <button>guardar</button>
     </div>
   </form>
 </body>
-
 </html>
